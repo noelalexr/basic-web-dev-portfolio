@@ -1,0 +1,786 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    border-top: 70px solid transparent;
+    margin-top: -70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu > div {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(127.5, 127.5, 127.5);
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.menu {
+    position: absolute;
+    left: 26px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.message-me {
+    position: absolute;
+    right: 30px;
+}
+
+.message-me-logo {
+    position: absolute;
+    left: -39px;
+    top: -8px;
+    height: 25px;
+    background-color: #929292;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.message-me-label {
+    color: #929292;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.section-me {
+    background-image: url(https://images.unsplash.com/photo-1640906152676-dace6710d24b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-name p {
+    font-family: "Montserrat", serif;
+    color: #cecece;
+}
+
+h1 {
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    color: #cecece;
+}
+
+.section-header {
+    border-top: 70px solid transparent;
+    margin-top: -70px;
+    text-align: center;
+    padding: 35px 0 10px 0;
+}
+
+.header-underline {
+    margin: 0 auto 25px;
+    background-color: #8b8b8b;
+    height: 5px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.about-me-body {
+    background-color: white;
+    color: rgb(75, 75, 75);
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.about-me-body p {
+    padding: 7px;
+}
+
+.skills-mobile span {
+    display: inline-block;
+    background-color: rgb(212.5, 212.5, 212.5);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.skills-mobile {
+    text-align: center;
+}
+
+.resume {
+    color: white;
+    max-width: fit-content;
+    margin: 15px auto 65px;
+    padding: 15px 25px;
+    background-color: rgb(127.5, 127.5, 127.5);
+    font-size: 16px;
+    font-weight: 650;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 5px 5px, white -5px -5px 5px 5px;
+}
+
+.projects {
+    background-image: url(https://images.unsplash.com/photo-1650954316166-c3361fefcc87?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 70px right 0;
+    color: white;
+}
+
+.flex-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 60px 0;
+}
+
+.section-project {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(2px);
+    color: black;
+    max-width: 500px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-project img {
+    max-width: 100%;
+}
+
+.section-project h3 {
+    font-size: 22px;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.section-project p {
+    color: rgb(50, 50, 50);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.project-button-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+}
+
+.project-button {
+    border: 1px solid #838383;
+    padding: 3px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-button > span {
+    color: #838383;
+    padding: 0 7px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.link-icons {
+    background-color: #838383;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.footer-icons-left {
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgb(127.5, 127.5, 127.5);
+}
+
+footer span {
+    padding: 0 7px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(127.5, 127.5, 127.5);
+}
+
+.footer-links-left {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer p {
+    color: rgb(127.5, 127.5, 127.5);
+    padding: 50px 0 10px 0;
+}
+
+.footer-icons-right {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: rgb(127.5, 127.5, 127.5);
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+/* ----- PSEUDO CLASS - ALL ----- */
+
+.message-me:hover > .message-me-label {
+    color: #2EBCD5;
+}
+
+.message-me:hover > .message-me-logo {
+    background-color: #2EBCD5;
+} 
+
+.message-me:active > .message-me-label {
+    color: #05D9FF;
+    text-shadow: 0 0 3px #05D9FF;
+}
+
+.message-me:active > .message-me-logo {
+    background-color: #05D9FF;
+    box-shadow: 0 0 2px 2px #05D9FF;
+}
+
+.logo:hover > img {
+    box-shadow: 0 0 0 1px #2EBCD5;
+    transition: transform 0.6s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.logo:active {
+    box-shadow: 0 0 4px 4px #05D9FF;
+}
+
+.resume:hover {
+    cursor: pointer;
+    background-color: #525252;
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+.section-project:hover {
+    background-color: white;
+    transition: transform 0.2s ease-out;
+    transform: scale(1.15);
+    z-index: 900;
+}
+
+/* .btn-youtube:hover > img {
+    background-color: #CF2726;
+    transition: transform 0.2s;
+    transform: scale(1.25);
+}
+
+.btn-youtube:hover > span {
+    color: #CF2726;
+}
+
+.btn-youtube:hover {
+    border: 1px solid #CF2726;
+    box-shadow: 0 0 0 2px #CF2726;
+} */
+
+.btn-web:hover > img {
+    background-color: #3A6AA7;
+    transition: transform 0.2s;
+    transform: scale(1.25);
+}
+
+.btn-web:hover > span {
+    color: #3A6AA7;
+}
+
+.btn-web:hover {
+    border: 1px solid #3A6AA7;
+    box-shadow: 0 0 0 2px #3A6AA7;
+}
+
+.btn-github:hover > img {
+    background-color: #517882;
+    transition: transform 0.2s;
+    transform: scale(1.25);
+}
+
+.btn-github:hover > span {
+    color: #517882;
+}
+
+.btn-github:hover {
+    border: 1px solid #517882;
+    box-shadow: 0 0 0 2px #517882;
+}
+
+.footer-links-left:hover > span {
+    color: #2EBCD5;
+}
+
+.footer-links-left:hover > img {
+    background-color: #2EBCD5;
+}
+
+
+.links-github:hover > img {
+    background-color: #d8d8d8;
+    transition: transform 0.2s;
+    transform: scale(1.12);
+}
+
+.links-linkedin:hover > img {
+    background-color: #1a8ca9;
+    transition: transform 0.2s;
+    transform: scale(1.12);
+}
+
+.links-fb:hover > img {
+    background-color: #1874ec;
+    transition: transform 0.2s;
+    transform: scale(1.12);
+}
+
+.links-ig:hover > img {
+    background-image: linear-gradient(to bottom left, #C33B88, #FD2424, #FFDD84);
+    transition: transform 0.2s;
+    transform: scale(1.12);
+}
+
+
+
+
+/* ----- MOBILE ----- */
+
+@media (max-width:480px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        position: absolute;
+        left: 2px;
+        top: 72px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    
+    .nav-links > a {
+        padding: 13px;
+    }
+
+    .nav-skills-desktop {
+        display: none;
+    }
+
+    .message-me-logo {
+        position: relative;
+        top: 2px;
+        left: 0;
+    }
+
+    .message-me-label {
+        display: none;
+    }
+
+    .my-photo {
+        display: none;
+    }
+
+    .my-name {
+        text-align: center;
+        padding: 50px 0 30px 0;
+    }
+
+    .skills-desktop {
+        display: none;
+    }
+
+    .about-me-body {
+        margin: 0 12px;
+        padding: 25px;
+    }
+
+    .project-button-section {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .project-button {
+        margin: 5px auto;
+    }
+
+    .footer-links-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+    /* ----- PSEUDO CLASS - MOBILE ----- */
+
+    .menu:hover div {
+        background-color: #2EBCD5;
+    }
+
+    .menu:active div {
+        background-color: #05D9FF;
+        box-shadow: 0 0 1px 1px #05D9FF;
+
+    }
+
+    .nav-links > a:hover {
+        color: #2EBCD5;
+    }
+
+    .nav-links > a:active {
+        color: #05D9FF;
+        text-shadow: 0 0 3px #05D9FF;
+        background-color: rgba(136, 136, 136, 0.75);
+    }
+
+}
+
+
+
+/* ----- TABLET ----- */
+
+@media (min-width:481px) and (max-width: 1023px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        position: absolute;
+        left: 2px;
+        top: 72px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .nav-links > a {
+        padding: 15px 5vw;
+    }
+
+    .nav-skills-desktop {
+        display: none;
+    }
+
+    .section-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-photo {
+        width: 200px;
+        padding-right: 10px;
+        animation: photo-in 0.5s;
+        opacity: 100%;
+    }
+
+    @keyframes photo-in {
+        0% { opacity: 0%;}
+    }
+
+    .my-name p {
+        color: transparent;
+        background-image: linear-gradient(#cecece, #cecece);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -1000px 0;
+        animation: name-backcolor 0.4s 0.2s linear forwards;
+    }
+
+    @keyframes name-backcolor {
+        100% { background-position: 0 0;}
+    }
+    
+    h1 {
+        color: transparent;
+        background-image: linear-gradient(#cecece, #cecece);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -1000px 0;
+        animation: name-backcolor 0.4s 0.2s linear forwards;
+    }
+
+    @keyframes name-backcolor {
+        100% { background-position: 0 0;}
+    } 
+
+    .skills-desktop {
+        display: none;
+    }
+
+    .about-me-body {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    .grid-footer {
+        display: grid;
+        justify-content: space-between;
+    }
+
+    .grid-item1{
+        grid-column: 2 / 3;
+
+    }
+
+    .grid-item2{
+        grid-column: 4 / 5;
+
+    }
+
+    .grid-item3{
+        grid-column: 1 / 6;
+    }
+
+
+    /* ----- PSEUDO CLASS - TABLET ----- */
+
+    .menu:hover div {
+        background-color: #2EBCD5;
+    }
+
+    .menu:active div {
+        background-color: #05D9FF;
+        box-shadow: 0 0 1px 1px #05D9FF;
+
+    }
+
+    .nav-links > a:hover {
+        color: #2EBCD5;
+    }
+
+    .nav-links > a:active {
+        color: #05D9FF;
+        text-shadow: 0 0 3px #05D9FF;
+        background-color: rgba(136, 136, 136, 0.75);
+    }
+    
+}
+
+
+
+/* ----- DESKTOP ----- */
+
+@media (min-width: 1024px) {
+
+    .menu {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        left: 8%;
+    }
+    
+    .nav-links > a {
+        color:rgb(127.5, 127.5, 127.5);
+        font-weight: 600;
+        padding: 0 15px;
+    }
+
+    .nav-skills-mobile {
+        display: none;
+    }
+
+    .message-me {
+        position: absolute;
+        right: 8%;
+    }
+
+    .section-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my-photo {
+        max-width: 30vw;
+        padding-right: 1vw;
+        animation: photo-in 0.5s;
+        opacity: 100%;
+    }
+
+    @keyframes photo-in {
+        0% { opacity: 0%;}
+    }
+
+    .my-name p {
+        font-size: 1.5vw;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding-top: 1vw;
+        color: transparent;
+        background-image: linear-gradient(white, white);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -1200px 0;
+        animation: name-backcolor 0.4s 0.4s linear forwards;
+    }
+
+    @keyframes name-backcolor {
+        100% { background-position: 0 0;}
+    }
+    
+    
+    h1 {
+        font-size: 5vw;
+        letter-spacing: 10px;
+        padding: 1vw 0 0 0;
+        color: transparent;
+        background-image: linear-gradient(white, white);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -1200px 0;
+        animation: name-backcolor 0.4s 0.4s linear forwards;
+    }
+
+    @keyframes name-backcolor {
+        100% { background-position: 0 0;}
+    } 
+
+    .skills-desktop span {
+        background-color: #4c4c4c;
+        color: white;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 450;
+        padding: 8px 10px;
+        margin: 10px 0.5vw;
+        border-radius: 3px;
+        animation: h2-in 0.8s;
+    }
+    
+    .skills-desktop h2 {
+        color: #929292;
+        font-size: 30px;
+        text-align: left;
+        padding: 4vw 0 10px;
+        animation: h2-in 0.8s;
+    }
+
+    @keyframes h2-in {
+        0% {opacity: 0%;}
+        30% {opacity: 0%;}
+    }
+    
+    .section-header {
+        font-size: 30px;
+        padding: 50px 0 10px 0;
+    }
+
+    .about-me-body {
+        font-size: 16px;
+        width: 700px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .skills-mobile {
+        display: none;
+    }
+
+    .grid-footer {
+        display: grid;
+        justify-content: space-between;
+    }
+
+    .grid-item1{
+        grid-column: 2 / 3;
+
+    }
+
+    .grid-item2{
+        grid-column: 4 / 5;
+
+    }
+
+    .grid-item3{
+        grid-column: 1 / 6;
+    }
+
+
+    /* ----- PSEUDO CLASS - DESKTOP ----- */
+
+    .nav-links > a:hover {
+        color: #2EBCD5;
+    }
+
+    .nav-links > a:active {
+        color: #05D9FF;
+        text-shadow: 0 0 3px #05D9FF;
+    }
+
+}
