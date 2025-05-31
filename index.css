@@ -370,6 +370,21 @@ footer p {
     box-shadow: 0 0 0 2px #517882;
 }
 
+.btn-gitlab:hover > img {
+    background-color: #FC722E;
+    transition: transform 0.2s;
+    transform: scale(1.25);
+}
+
+.btn-gitlab:hover > span {
+    color: #FC722E;
+}
+
+.btn-gitlab:hover {
+    border: 1px solid #FC722E;
+    box-shadow: 0 0 0 2px #FC722E;
+}
+
 .footer-links-left:hover > span {
     color: #2EBCD5;
 }
